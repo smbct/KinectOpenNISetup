@@ -1,0 +1,10 @@
+
+# SimpleSkeletonRevisited
+SimpleSkeletonRevisited/*.o
+SimpleSkeletonRevisited/SimpleSkeletonRevisited
+
+# SkeletonViewer
+SkeletonViewer/*.o
+SkeletonViewer/SkeletonViewer
+
+

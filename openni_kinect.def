@@ -1,0 +1,25 @@
+Bootstrap: docker
+From: ubuntu:latest
+Stage: build
+
+%setup
+
+%files
+    install_openni_kinect.sh
+
+%environment
+    export TZ=Europe/Paris
+
+%post
+
+    # set time zone (https://stackoverflow.com/questions/62299928/r-installation-in-docker-gets-stuck-in-geographic-area)
+    ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+    bash install_openni_kinect.sh
+    
+%labels
+    Author smbct
+    Version v0.0.1
+
+%help
+    This container contains an environment for developping with the Kinect device and the OpenNI library. OpenNI library allows for developping applications with skeleton tracking from the Kinect. 
