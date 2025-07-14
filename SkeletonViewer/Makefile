@@ -11,3 +11,5 @@ Skeleton.o: Skeleton.cpp
 main.o: main.cpp
 	g++ main.cpp -I /usr/include/ni -I /usr/include/ -c -o main.o
 
+clean:
+	rm -f *.o SkeletonViewer

@@ -1,6 +1,7 @@
 #pragma once
 
 #include <map>
+#include <ctime>
 
 #include <GL/glu.h>
 #include <XnCppWrapper.h> // only OpenNI header necessary

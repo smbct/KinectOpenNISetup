@@ -5,3 +5,5 @@ SimpleSkeletonRevisited: SimpleSkeletonRevisited.o
 SimpleSkeletonRevisited.o: SimpleSkeletonRevisited.cpp
 	g++ SimpleSkeletonRevisited.cpp -I /usr/include/ni -c -o SimpleSkeletonRevisited.o
 
+clean:
+	rm -f *.o SimpleSkeletonRevisited
