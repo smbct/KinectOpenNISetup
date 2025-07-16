@@ -2,6 +2,7 @@
 
 This repository contains a set of scripts and examples to help run and develop with the OpenNI library on Linux for the Kinect device development.
 It contains a bash install script, an apptainer image file definition and two simple code examples written in C++.
+For more info see <https://smbct.github.io/blog/kinect_tracking/>.
 
 ## Install script
 
@@ -12,7 +13,7 @@ It explicitly specify commits hash to favor reproducibility.
 Multiple dependencies are installed by the script, see `install_openni_kinect.sh`.
 The freeglut3 library and openGL are installed only to allow running the samples.
 libusb is however necessary to compile the OpenNI library and the Kinect driver.
-Some dependancies such as python and java may be removed in the future as they are not amndatory for developing with openNI in C++.
+Some dependancies such as python and java may be removed in the future as they are not mandatory for developing with openNI in C++.
 
 
 ## Apptainer image
